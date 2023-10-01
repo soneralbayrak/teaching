@@ -2,6 +2,7 @@
 /* start css.sty */
 .cmbx-12{ font-weight: bold;}
 .cmbx-12{ font-weight: bold;}
+.cmbx-12{ font-weight: bold;}
 .cmbsy-10x-x-120{font-weight: bold;}
 .cmbsy-10x-x-120{font-weight: bold;}
 .cmbsy-10x-x-120{font-weight: bold;}
@@ -22,10 +23,15 @@
 .cmsy-6{font-size:50%;}
 .cmbx-12x-x-144{font-size:144%; font-weight: bold;}
 .cmbx-12x-x-144{ font-weight: bold;}
+.cmbx-12x-x-144{ font-weight: bold;}
 .cmr-17{font-size:141%;}
 .cmtt-12{font-family: monospace,monospace;}
 .cmbxti-10x-x-120{ font-weight: bold; font-style: italic;}
 .cmti-12{ font-style: italic;}
+.cmr-10x-x-109{font-size:90%;}
+.cmbx-10x-x-109{font-size:90%; font-weight: bold;}
+.cmbx-10x-x-109{ font-weight: bold;}
+.cmbx-10x-x-109{ font-weight: bold;}
 .cmr-12x-x-120{font-size:120%;}
 .cmti-8{font-size:66%; font-style: italic;}
 @media print {span.next {visibility:hidden;}}
@@ -176,6 +182,7 @@ table.equation-star { width:100%; }
 mtd.align-odd{margin-left:2em; text-align:right;}
 mtd.align-even{margin-right:2em; text-align:left;}
 .boxed{border: 1px solid black; padding-left:2px; padding-right:2px;}
+dt.enumerate-enumitem{float:left; clear:left; margin-left:1em; margin-right:1em;}
 li li{margin-left:2em;}
 dd dl{margin-left:2em;}
 /* end css.sty */
