@@ -14,12 +14,12 @@
 <!-- l. 2 --><p class='noindent'>There is no universally-agreed-upon way to convert the overall score of a student
 to the final letter grade. Many institutions (including METU) leave this to
 the instructor’s full discretion, and many instructors choose to do this
-assignment in an heuristic course-by-course manner. I instead do this
-assignment in an algorithmic way, which is detailed in this website for full
-transparency.
                                                                           
 
                                                                           
+assignment in an heuristic course-by-course manner. I instead do this
+assignment in an algorithmic way, which is detailed in this website for full
+transparency.
 </p><!-- l. 4 --><p class='noindent'>
 </p>
    <h5 class='likesubsubsectionHead' id='overview-of-different-approaches'><a id='x10-62000'></a>Overview of different approaches</h5>
@@ -54,9 +54,6 @@ if it exists.
       can be ignored.</li></ul>
 <!-- l. 15 --><p class='noindent'>Under these assumptions, the letter grade can be assigned to a student solely based
 on their scores, independent of the semester of the course. Therefore, we simply
-                                                                          
-
-                                                                          
 create score brackets (such as 90-100, 85-90, etc.), and assign letter grades based
 on which bracket a student’s score falls into. This is colloquially called <span class='cmti-12'>catalog
 </span><span class='cmti-12'>grading</span>.
@@ -86,12 +83,12 @@ and the probability for the hypothetical average student to get a score between
 <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>30</mn></mrow></math> and
 <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>100</mn></mrow></math> is
 <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>1</mn><mo class='MathClass-bin'>∕</mo><mn>100</mn></mrow></math>, then
-the student is to be awarded the letter grade <span class='cmtt-12'>AA </span>even though their score would be
-<span class='cmtt-12'>FF </span>under the “catalog grading”. This “comparing with the gaussian” type of
-grading is colloquially called <span class='cmti-12'>curve grading</span>.
                                                                           
 
                                                                           
+the student is to be awarded the letter grade <span class='cmtt-12'>AA </span>even though their score would be
+<span class='cmtt-12'>FF </span>under the “catalog grading”. This “comparing with the gaussian” type of
+grading is colloquially called <span class='cmti-12'>curve grading</span>.
 </p>
 <!-- l. 26 --><p class='noindent'><span class='paragraphHead' id='c'><a id='x10-65000'></a><span class='cmbx-12'>(c)</span></span>
    There are several other approaches, which relax some of the assumptions
@@ -121,6 +118,9 @@ them.
       decide that a student gets <span class='cmtt-12'>AA </span>above some particular score <!-- l. 33 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>X</mi></math>,
       there may be 30 students in the class who get the the letter grade <span class='cmtt-12'>BA</span>
       because their score is <!-- l. 33 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi> <mo class='MathClass-bin'>−</mo> <mn>1</mn></mrow></math>,
+                                                                          
+
+                                                                          
       whereas 25 other students with the score <!-- l. 33 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi> <mo class='MathClass-bin'>+</mo> <mn>1</mn></mrow></math>
       get the letter grade <span class='cmtt-12'>AA</span>: both catalog and traditional curve grading are
       insensitive to such problems!
@@ -155,14 +155,14 @@ individual scores! </p>
 <div class='lstlisting' id='listing-1'><span class='label'><a id='x10-66001r1'></a></span><span style='color:#66998F'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>=</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#66998F'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>,9]</span></span></div>
 </div>
 <!-- l. 45 --><p class='noindent'>This, however, does not solve the third problem above as the clustering method does
+                                                                          
+
+                                                                          
 not distinguish different parts of the score spectrum. We can remedy this by
 stretching the high end of the scores and squeezing the low end –this can be
 achieved by the following code: </p>
 <div class='center'>
 <!-- l. 46 --><p class='noindent'>
-                                                                          
-
-                                                                          
 </p>
 <!-- l. 47 -->
 <div class='lstlisting' id='listing-2'><span class='label'><a id='x10-66002r1'></a></span><span style='color:#66998F'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>=</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>100</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>-</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#262680'><span class='cmtt-10'>Exp</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#262680'><span class='cmtt-10'>Log</span></span><span style='color:#000000'><span class='cmtt-10'>[100-</span></span><span style='color:#66998F'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>],9]]</span></span></div>
