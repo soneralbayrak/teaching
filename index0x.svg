@@ -373,6 +373,7 @@
 <use x='126.285356' y='188.30764' xlink:href='#g4-49'/>
 <use x='131.739921' y='188.30764' xlink:href='#g4-54'/>
 </g>
+<path d='M110.0821 360.234L115.75 348.895' stroke='#f0f' fill='none' stroke-width='2.72731' stroke-miterlimit='10'/>
 <path d='M115.75 360.234L110.0821 348.895' stroke='#0ff' fill='none' stroke-width='2.72731' stroke-miterlimit='10'/>
 <g transform='matrix(1 0 0 1 -18.823 169.093)'>
 <use x='126.285356' y='188.30764' xlink:href='#g4-49'/>
@@ -449,6 +450,7 @@
 <g transform='matrix(1 0 0 1 -79.9143 211.366)'>
 <use x='131.739908' y='188.30764' xlink:href='#g4-51'/>
 </g>
+<path d='M67.0977 402.508V391.168' stroke='#00f' fill='none' stroke-width='2.72731' stroke-miterlimit='10'/>
 <g transform='matrix(1 0 0 1 -64.6414 211.366)'>
 <use x='131.739908' y='188.30764' xlink:href='#g4-52'/>
 </g>
