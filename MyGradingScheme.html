@@ -13,6 +13,9 @@
    <h3 class='likesectionHead' id='my-grading-scheme'><a id='x9-36000'></a>My Grading Scheme</h3>
 <!-- l. 2 --><p class='noindent'>There is no universally-agreed-upon way to convert the overall score of a student
 to the final letter grade. Many institutions (including METU) leave this to
+                                                                          
+
+                                                                          
 the instructor’s full discretion, and many instructors choose to do this
 assignment in an heuristic course-by-course manner. I instead do this
 assignment in an algorithmic way, which is detailed in this website for full
@@ -43,12 +46,12 @@ if it exists.
 <!-- l. 10 --><p class='noindent'><span class='paragraphHead' id='a'><a id='x9-38000'></a><span class='cmbx-12'>(a)</span></span>
    The first practical approach that we can choose is to assume the following:
 </p>
-                                                                          
-
-                                                                          
       <ul class='itemize1'>
       <li class='itemize'>The dependence on <!-- l. 12 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
       can be reduced to a single parameter: <span class='cmti-12'>the score of the student</span>.
+                                                                          
+
+                                                                          
       </li>
       <li class='itemize'>The dependence on <!-- l. 13 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>C</mi></math>
       can be ignored.</li></ul>
@@ -76,14 +79,14 @@ that <span class='cmbx-12'>(1) </span>these probability distributions are suffic
 sufficiently many students in the class, the probability distribution for <span class='cmti-12'>a
 </span><span class='cmti-12'>hypothetical average student </span>becomes a <span class='cmti-12'>Gaussian distribution</span>. This follows from
 the <span class='cmti-12'>Central Limit Theorem</span>.
-                                                                          
-
-                                                                          
 </p><!-- l. 24 --><p class='indent'>   The letter grades of individual students are now assigned based on how well they
 did compared to this hypothetical average student. For instance, if a student has the
 score <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>40</mn></mrow></math>,
 and the probability for the hypothetical average student to get a score between
 <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>30</mn></mrow></math> and
+                                                                          
+
+                                                                          
 <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>100</mn></mrow></math> is
 <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>1</mn><mo class='MathClass-bin'>∕</mo><mn>100</mn></mrow></math>, then
 the student is to be awarded the letter grade <span class='cmtt-12'>AA </span>even though their score would be
@@ -113,12 +116,12 @@ them.
       it also suffers from the same problem; for instance, if a student is in the
       top <!-- l. 32 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>15</mn><mi>%</mi></mrow></math>
       of the class, should s/he get <span class='cmtt-12'>AA</span>, <span class='cmtt-12'>BA</span>, or <span class='cmtt-12'>BB</span>?
-                                                                          
-
-                                                                          
       </li>
       <li class='itemize'><span class='cmbxti-10x-x-120'>They are unfair in the letter transitions! </span>For instance, if we
       decide that a student gets <span class='cmtt-12'>AA </span>above some particular score <!-- l. 33 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>X</mi></math>,
+                                                                          
+
+                                                                          
       there may be 30 students in the class who get the the letter grade <span class='cmtt-12'>BA</span>
       because their score is <!-- l. 33 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi> <mo class='MathClass-bin'>−</mo> <mn>1</mn></mrow></math>,
       whereas 25 other students with the score <!-- l. 33 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi> <mo class='MathClass-bin'>+</mo> <mn>1</mn></mrow></math>
@@ -152,11 +155,11 @@ individual scores! </p>
 <!-- l. 40 --><p class='noindent'>
 </p>
 <!-- l. 41 -->
+<div class='lstlisting' id='listing-2'><span class='label'><a id='x9-41001r1'></a></span><span style='color:#66998F'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>=</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#66998F'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>,9]</span></span></div>
+</div>
                                                                           
 
                                                                           
-<div class='lstlisting' id='listing-2'><span class='label'><a id='x9-41001r1'></a></span><span style='color:#66998F'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>=</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#66998F'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>,9]</span></span></div>
-</div>
 <!-- l. 45 --><p class='noindent'>This, however, does not solve the third problem above as the clustering method does
 not distinguish different parts of the score spectrum. We can remedy this by
 stretching the high end of the scores and squeezing the low end –this can be
