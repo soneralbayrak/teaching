@@ -52,7 +52,7 @@ html {
 
 img {
   -ms-interpolation-mode: bicubic;
-  background: rgb(255,255,0);
+  background: transparent;
   border: 0;
   }
 
@@ -84,11 +84,11 @@ img, embed, object, video {
   }
 
 img::selection {
-  background: rgb(255,255,0);
+  background: transparent;
   }
 
 img::-moz-selection {
-  background: rgb(255,255,0);
+  background: transparent;
   }
 
 /*

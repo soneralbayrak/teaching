@@ -2,7 +2,6 @@
 /* start css.sty */
 .cmbx-12{ font-weight: bold;}
 .cmbx-12{ font-weight: bold;}
-.cmbx-12{ font-weight: bold;}
 .cmbsy-10x-x-120{font-weight: bold;}
 .cmbsy-10x-x-120{font-weight: bold;}
 .cmbsy-10x-x-120{font-weight: bold;}
@@ -23,23 +22,15 @@
 .cmsy-6{font-size:50%;}
 .cmbx-12x-x-144{font-size:144%; font-weight: bold;}
 .cmbx-12x-x-144{ font-weight: bold;}
-.cmbx-12x-x-144{ font-weight: bold;}
-.cmr-17{font-size:141%;}
 .cmtt-12{font-family: monospace,monospace;}
 .cmtt-12{font-family: monospace,monospace;}
 .cmtt-12{font-family: monospace,monospace;}
 .cmbxti-10x-x-120{ font-weight: bold; font-style: italic;}
 .cmti-12{ font-style: italic;}
-.cmr-10x-x-109{font-size:90%;}
-.cmbx-10x-x-109{font-size:90%; font-weight: bold;}
-.cmbx-10x-x-109{ font-weight: bold;}
-.cmbx-10x-x-109{ font-weight: bold;}
 .cmtt-10{font-size:83%;font-family: monospace,monospace;}
 .cmtt-10{font-family: monospace,monospace;}
 .cmtt-10{font-family: monospace,monospace;}
 .cmitt-10{font-size:83%;font-family: monospace,monospace; font-style: italic;}
-.cmr-12x-x-120{font-size:120%;}
-.cmti-8{font-size:66%; font-style: italic;}
 @media print {span.next {visibility:hidden;}}
 body#tex4ht-menu {white-space: nowrap; }
 p{margin-top:0;margin-bottom:0}
@@ -83,7 +74,7 @@ td.displaylines {text-align:center; white-space:nowrap;}
 .centerline {text-align:center;}
 .rightline {text-align:right;}
 pre.verbatim {font-family: monospace,monospace; text-align:left; clear:both; }
-.fbox {padding-left:0.0pt; padding-right:0.0pt; text-indent:0pt; border:solid black 0.4pt; }
+.fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
 div.fbox {display:table}
 div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
 div.minipage{width:100%;}
@@ -94,7 +85,7 @@ div.flushright div {text-align: left;}
 div.flushleft {text-align: left;}
 .underline{ text-decoration:underline; }
 .underline img{ border-bottom: 1px solid black; margin-bottom:1pt; }
-.framebox-c, .framebox-l, .framebox-r { padding-left:0.0pt; padding-right:0.0pt; text-indent:0pt; border:solid black 0.4pt; }
+.framebox-c, .framebox-l, .framebox-r { padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
 .framebox-c {text-align:center;}
 .framebox-l {text-align:left;}
 .framebox-r {text-align:right;}
