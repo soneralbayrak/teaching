@@ -155,7 +155,7 @@ individual scores! </p>
 <!-- l. 40 --><p class='noindent'>
 </p>
 <!-- l. 41 -->
-<pre class='lstlisting' id='listing-2'><span class='label'><a id='x10-47001r1'></a></span><span style='color:#FF0000'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'> <span class='cmtt-10'>=</span> </span><span style='color:#FF0000'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#FF0000'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>,9]</span></span></pre>
+<pre class='lstlisting' id='listing-2'><span class='label'><a id='x10-47001r1'></a></span><span style='color:#66998F'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'> <span class='cmtt-10'>=</span> </span><span style='color:#66998F'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>,9]</span></span></pre>
 </div>
 <!-- l. 45 --><p class='noindent'>This, however, does not solve the third problem above as the clustering method does
 not distinguish different parts of the score spectrum. We can remedy this by
@@ -165,7 +165,7 @@ achieved by the following code: </p>
 <!-- l. 46 --><p class='noindent'>
 </p>
 <!-- l. 47 -->
-<pre class='lstlisting' id='listing-3'><span class='label'><a id='x10-47002r1'></a></span><span style='color:#FF0000'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'> <span class='cmtt-10'>= </span><span class='cmtt-10'>100 </span><span class='cmtt-10'>-</span> </span><span style='color:#FF0000'><span class='cmtt-10'>Exp</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#FF0000'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#FF0000'><span class='cmtt-10'>Log</span></span><span style='color:#000000'><span class='cmtt-10'>[100-</span></span><span style='color:#FF0000'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>],9]]</span></span></pre>
+<pre class='lstlisting' id='listing-3'><span class='label'><a id='x10-47002r1'></a></span><span style='color:#66998F'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'> <span class='cmtt-10'>= </span><span class='cmtt-10'>100 </span><span class='cmtt-10'>-</span> </span><span style='color:#262680'><span class='cmtt-10'>Exp</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#262680'><span class='cmtt-10'>Log</span></span><span style='color:#000000'><span class='cmtt-10'>[100-</span></span><span style='color:#66998F'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>],9]]</span></span></pre>
 </div>
                                                                           
 
