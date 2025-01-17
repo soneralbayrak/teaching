@@ -12,6 +12,9 @@
    <!-- l. 1 --><div class='crosslinks'><p class='noindent'>[<a href='MySchedule.html'>next</a>] [<a href='MyTeachingPolicy.html'>prev</a>] [<a href='MyTeachingPolicy.html#tailMyTeachingPolicy.html'>prev-tail</a>] [<a href='#tailMyGradingScheme.html'>tail</a>] [<a href='index.html#MyGradingScheme.html'>up</a>] </p></div>
    <h3 class='likesectionHead' id='my-grading-scheme'><a id='x11-63000'></a>My Grading Scheme</h3>
 <!-- l. 2 --><p class='noindent'>There is no universally-agreed-upon way to convert the overall score of a student
+                                                                          
+
+                                                                          
 to the final letter grade. Many institutions (including METU) leave this to
 the instructor’s full discretion, and many instructors choose to do this
 assignment in an heuristic course-by-course manner. I instead do this
@@ -22,9 +25,6 @@ transparency.
 <p><a id='x11-64000doc'></a></p>
 <!-- l. 6 --><p class='noindent'>Let us assume that a student <!-- l. 6 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
 takes a class <!-- l. 6 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>C</mi></math>: at the end of
-                                                                          
-
-                                                                          
 the semester, the grade <!-- l. 6 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>G</mi></math>
 of the student is expected to depend both on the student
 <!-- l. 6 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math> and the class
@@ -51,6 +51,9 @@ if it exists.
       </li>
       <li class='itemize'>The dependence on <!-- l. 13 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>C</mi></math>
       can be ignored.</li></ul>
+                                                                          
+
+                                                                          
 <!-- l. 15 --><p class='noindent'>Under these assumptions, the letter grade can be assigned to a student solely based
 on their scores, independent of the semester of the course. Therefore, we simply
 create score brackets (such as 90-100, 85-90, etc.), and assign letter grades based
@@ -60,9 +63,6 @@ on which bracket a student’s score falls into. This is colloquially called <sp
 <!-- l. 17 --><p class='noindent'><span class='likeparagraphHead' id='b'><a id='x11-66000'></a>(b)</span>
    The second practical approach assumes the following: </p>
       <ul class='itemize1'>
-                                                                          
-
-                                                                          
       <li class='itemize'>The dependence on <!-- l. 19 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
       can be reduced to a single parameter: <span class='cmti-12'>the score of the student</span>.
       </li>
@@ -89,6 +89,9 @@ the student is to be awarded the letter grade <span class='cmtt-12'>AA </span>ev
 <span class='cmtt-12'>FF </span>under the “catalog grading”. This “comparing with the gaussian” type of
 grading is colloquially called <span class='cmti-12'>curve grading</span>.
 </p>
+                                                                          
+
+                                                                          
 <!-- l. 26 --><p class='noindent'><span class='likeparagraphHead' id='c'><a id='x11-67000'></a>(c)</span>
    There are several other approaches, which relax some of the assumptions
 in the other methods. For instance, one can extend the dependence on
@@ -99,9 +102,6 @@ Despite having the potential to be somehow fairer, these methods are either
 non-algorithmic or non-practical for large classes, hence I do not prefer
 them.
 </p>
-                                                                          
-
-                                                                          
    <h5 class='likesubsubsectionHead' id='my-algorithm'><a id='x11-68000'></a>My algorithm</h5>
 <p><a id='x11-68000doc'></a></p>
 <!-- l. 30 --><p class='noindent'>There are some problems both with the catalog and traditional curve grading:
@@ -126,6 +126,9 @@ them.
       <li class='itemize'><span class='cmbxti-10x-x-120'>They cannot distinguish high effort from low effort! </span>It is easier
       to get 5 more points if your grade is 20 out of 100, whereas this becomes
       extremely hard if your grade is 92. In other words, two students with the
+                                                                          
+
+                                                                          
       grades <!-- l. 34 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>20</mn></mrow></math>
       and <!-- l. 34 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>25</mn></mrow></math>
       can be considered to have put similar efforts, whereas another student
@@ -137,9 +140,6 @@ them.
       mechanism  at  all  to  supply  such  an  asymmetry.  In  short,  in  both
       approaches, one relies on instructor’s judgement to ensure that the
       grading scheme distinguishes low and high efforts.</li></ul>
-                                                                          
-
-                                                                          
 <!-- l. 37 --><p class='indent'>   The first two problems can be solved if we <span class='cmti-12'>cluster </span>students into various
 groups: indeed, we expect students to obtain similar results if they turn in similar
 homeworks or make similar mistakes in the exams, so it is natural to observe
@@ -164,6 +164,9 @@ achieved by the following code: </p>
 </p>
 <!-- l. 47 -->
 <div class='lstlisting' id='listing-3'><span class='label'><a id='x11-68002r1'></a></span><span style='color:#66998F'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>=</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>100</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>-</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#262680'><span class='cmtt-10'>Exp</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#262680'><span class='cmtt-10'>Log</span></span><span style='color:#000000'><span class='cmtt-10'>[100-</span></span><span style='color:#66998F'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>],9]]</span></span></div>
+                                                                          
+
+                                                                          
 </div>
 <!-- l. 52 --><p class='indent'>   This ensures <span class='cmti-12'>an algorithmic unambiguous grading scheme which tries to assign
 </span><span class='cmti-12'>same letter grade to students with similar scores, and which distinguishes the
@@ -174,9 +177,6 @@ Semester. </p>
 <div class='center'>
 <!-- l. 53 --><p class='noindent'>
 </p><!-- l. 54 --><p class='noindent'><img alt='PIC' src='images//grade_visualization.png' style='width:100%' /> </p></div>
-                                                                          
-
-                                                                          
 <!-- l. 1 --><div class='crosslinks'><p class='noindent'>[<a href='MySchedule.html'>next</a>] [<a href='MyTeachingPolicy.html'>prev</a>] [<a href='MyTeachingPolicy.html#tailMyTeachingPolicy.html'>prev-tail</a>] [<a href='MyGradingScheme.html'>front</a>] [<a href='index.html#MyGradingScheme.html'>up</a>] </p></div>
 <!-- l. 1 --><p class='indent'>   <a id='tailMyGradingScheme.html'></a></p> 
 <div class='footer'><p>Copyright © by Soner Albayrak | All rights reserved</p></div> 
