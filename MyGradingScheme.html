@@ -34,6 +34,9 @@ would require us to have access to infinite information: the student
 may have infinitely many attributes that we should take into account
 (how much they study, how intelligent they are, if they lost a family
 member this semester, etc.), and the class may depend on infinitely
+                                                                          
+
+                                                                          
 many conditions (how good the instructor is, how hard the tests are,
 whether it is a morning class, etc.). It is impossible to find the “correct”
 <!-- l. 8 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>f</mi></math>, even
@@ -44,9 +47,6 @@ if it exists.
 </p>
       <ul class='itemize1'>
       <li class='itemize'>The dependence on <!-- l. 12 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
-                                                                          
-
-                                                                          
       can be reduced to a single parameter: <span class='cmti-12'>the score of the student</span>.
       </li>
       <li class='itemize'>The dependence on <!-- l. 13 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>C</mi></math>
@@ -68,6 +68,9 @@ on which bracket a student’s score falls into. This is colloquially called <sp
 score at the end of the semester; for instance, student 1 might have probability
 <!-- l. 22 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>1</mn><mo class='MathClass-bin'>∕</mo><mn>4</mn></mrow></math> to obtain a score
 greater than <!-- l. 22 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>70</mn></mrow></math>
+                                                                          
+
+                                                                          
 out of <!-- l. 22 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>100</mn></mrow></math>.
 Therefore, we can <span class='cmti-12'>assign </span>a probability distribution to each student, telling us
 their <span class='cmti-12'>likelihood </span>to get some particular score (such as 72 or 49). Now, if we <span class='cmti-12'>assume</span>
@@ -80,9 +83,6 @@ did compared to this hypothetical average student. For instance, if a student ha
 score <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>40</mn></mrow></math>,
 and the probability for the hypothetical average student to get a score between
 <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>30</mn></mrow></math> and
-                                                                          
-
-                                                                          
 <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>100</mn></mrow></math> is
 <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>1</mn><mo class='MathClass-bin'>∕</mo><mn>100</mn></mrow></math>, then
 the student is to be awarded the letter grade <span class='cmtt-12'>AA </span>even though their score would be
@@ -109,6 +109,9 @@ them.
       brackets (90-100, 85-59, 80-84, etc.), but they are not dictated by a fair
       objective mechanism. The approach of the curve grading is better, but
       it also suffers from the same problem; for instance, if a student is in the
+                                                                          
+
+                                                                          
       top <!-- l. 32 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>15</mn><mi>%</mi></mrow></math>
       of the class, should s/he get <span class='cmtt-12'>AA</span>, <span class='cmtt-12'>BA</span>, or <span class='cmtt-12'>BB</span>?
       </li>
@@ -119,9 +122,6 @@ them.
       whereas 25 other students with the score <!-- l. 33 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi> <mo class='MathClass-bin'>+</mo> <mn>1</mn></mrow></math>
       get the letter grade <span class='cmtt-12'>AA</span>: both catalog and traditional curve grading are
       insensitive to such problems!
-                                                                          
-
-                                                                          
       </li>
       <li class='itemize'><span class='cmbxti-10x-x-120'>They cannot distinguish high effort from low effort! </span>It is easier
       to get 5 more points if your grade is 20 out of 100, whereas this becomes
@@ -148,6 +148,9 @@ command splits the “scores” list into 9 categories, based on the clustering 
 individual scores! </p>
 <div class='center'>
 <!-- l. 40 --><p class='noindent'>
+                                                                          
+
+                                                                          
 </p>
 <!-- l. 41 -->
 <div class='lstlisting' id='listing-2'><span class='label'><a id='x11-68001r1'></a></span><span style='color:#66998F'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>=</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#66998F'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>,9]</span></span></div>
@@ -157,9 +160,6 @@ not distinguish different parts of the score spectrum. We can remedy this by
 stretching the high end of the scores and squeezing the low end –this can be
 achieved by the following code: </p>
 <div class='center'>
-                                                                          
-
-                                                                          
 <!-- l. 46 --><p class='noindent'>
 </p>
 <!-- l. 47 -->
