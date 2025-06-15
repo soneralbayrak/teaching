@@ -22,9 +22,6 @@ transparency.
 <p><a id='x11-64000doc'></a></p>
 <!-- l. 6 --><p class='noindent'>Let us assume that a student <!-- l. 6 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
 takes a class <!-- l. 6 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>C</mi></math>: at the end of
-                                                                          
-
-                                                                          
 the semester, the grade <!-- l. 6 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>G</mi></math>
 of the student is expected to depend both on the student
 <!-- l. 6 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math> and the class
@@ -47,6 +44,9 @@ if it exists.
 </p>
       <ul class='itemize1'>
       <li class='itemize'>The dependence on <!-- l. 12 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
+                                                                          
+
+                                                                          
       can be reduced to a single parameter: <span class='cmti-12'>the score of the student</span>.
       </li>
       <li class='itemize'>The dependence on <!-- l. 13 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>C</mi></math>
@@ -60,9 +60,6 @@ on which bracket a student’s score falls into. This is colloquially called <sp
 <!-- l. 17 --><p class='noindent'><span class='likeparagraphHead' id='b'><a id='x11-66000'></a>(b)</span>
    The second practical approach assumes the following: </p>
       <ul class='itemize1'>
-                                                                          
-
-                                                                          
       <li class='itemize'>The dependence on <!-- l. 19 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
       can be reduced to a single parameter: <span class='cmti-12'>the score of the student</span>.
       </li>
@@ -83,6 +80,9 @@ did compared to this hypothetical average student. For instance, if a student ha
 score <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>40</mn></mrow></math>,
 and the probability for the hypothetical average student to get a score between
 <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>30</mn></mrow></math> and
+                                                                          
+
+                                                                          
 <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>100</mn></mrow></math> is
 <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>1</mn><mo class='MathClass-bin'>∕</mo><mn>100</mn></mrow></math>, then
 the student is to be awarded the letter grade <span class='cmtt-12'>AA </span>even though their score would be
@@ -99,9 +99,6 @@ Despite having the potential to be somehow fairer, these methods are either
 non-algorithmic or non-practical for large classes, hence I do not prefer
 them.
 </p>
-                                                                          
-
-                                                                          
    <h5 class='likesubsubsectionHead' id='my-algorithm'><a id='x11-68000'></a>My algorithm</h5>
 <p><a id='x11-68000doc'></a></p>
 <!-- l. 30 --><p class='noindent'>There are some problems both with the catalog and traditional curve grading:
@@ -122,6 +119,9 @@ them.
       whereas 25 other students with the score <!-- l. 33 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi> <mo class='MathClass-bin'>+</mo> <mn>1</mn></mrow></math>
       get the letter grade <span class='cmtt-12'>AA</span>: both catalog and traditional curve grading are
       insensitive to such problems!
+                                                                          
+
+                                                                          
       </li>
       <li class='itemize'><span class='cmbxti-10x-x-120'>They cannot distinguish high effort from low effort! </span>It is easier
       to get 5 more points if your grade is 20 out of 100, whereas this becomes
@@ -137,9 +137,6 @@ them.
       mechanism  at  all  to  supply  such  an  asymmetry.  In  short,  in  both
       approaches, one relies on instructor’s judgement to ensure that the
       grading scheme distinguishes low and high efforts.</li></ul>
-                                                                          
-
-                                                                          
 <!-- l. 37 --><p class='indent'>   The first two problems can be solved if we <span class='cmti-12'>cluster </span>students into various
 groups: indeed, we expect students to obtain similar results if they turn in similar
 homeworks or make similar mistakes in the exams, so it is natural to observe
@@ -160,6 +157,9 @@ not distinguish different parts of the score spectrum. We can remedy this by
 stretching the high end of the scores and squeezing the low end –this can be
 achieved by the following code: </p>
 <div class='center'>
+                                                                          
+
+                                                                          
 <!-- l. 46 --><p class='noindent'>
 </p>
 <!-- l. 47 -->
@@ -174,9 +174,6 @@ Semester. </p>
 <div class='center'>
 <!-- l. 53 --><p class='noindent'>
 </p><!-- l. 54 --><p class='noindent'><img alt='PIC' src='images//grade_visualization.png' style='width:100%' /> </p></div>
-                                                                          
-
-                                                                          
 <!-- l. 1 --><div class='crosslinks'><p class='noindent'>[<a href='MySchedule.html'>next</a>] [<a href='MyTeachingPolicy.html'>prev</a>] [<a href='MyTeachingPolicy.html#tailMyTeachingPolicy.html'>prev-tail</a>] [<a href='MyGradingScheme.html'>front</a>] [<a href='index.html#MyGradingScheme.html'>up</a>] </p></div>
 <!-- l. 1 --><p class='indent'>   <a id='tailMyGradingScheme.html'></a></p> 
 <div class='footer'><p>Copyright © by Soner Albayrak | All rights reserved</p></div> 
