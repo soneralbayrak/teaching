@@ -27,9 +27,6 @@ of the student is expected to depend both on the student
 <!-- l. 6 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math> and the class
 <!-- l. 6 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>C</mi></math>. Ideally, we would
 know the function <!-- l. 6 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>f</mi></math>
-                                                                          
-
-                                                                          
 such that <!-- l. 6 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>G</mi> <mo class='MathClass-rel'>=</mo> <mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>S</mi><mo class='MathClass-punc'>,</mo><mi>C</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>,
 which completely takes into account both the student and the class.
 </p><!-- l. 8 --><p class='indent'>   Determining such a function <!-- l. 8 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>f</mi></math>
@@ -37,6 +34,9 @@ would require us to have access to infinite information: the student
 may have infinitely many attributes that we should take into account
 (how much they study, how intelligent they are, if they lost a family
 member this semester, etc.), and the class may depend on infinitely
+                                                                          
+
+                                                                          
 many conditions (how good the instructor is, how hard the tests are,
 whether it is a morning class, etc.). It is impossible to find the “correct”
 <!-- l. 8 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>f</mi></math>, even
@@ -63,14 +63,14 @@ on which bracket a student’s score falls into. This is colloquially called <sp
       <li class='itemize'>The dependence on <!-- l. 19 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
       can be reduced to a single parameter: <span class='cmti-12'>the score of the student</span>.
       </li>
-                                                                          
-
-                                                                          
       <li class='itemize'>There are sufficiently many students in the class.</li></ul>
 <!-- l. 22 --><p class='noindent'>In this approach, we argue that each student has some probability to obtain some
 score at the end of the semester; for instance, student 1 might have probability
 <!-- l. 22 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>1</mn><mo class='MathClass-bin'>∕</mo><mn>4</mn></mrow></math> to obtain a score
 greater than <!-- l. 22 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>70</mn></mrow></math>
+                                                                          
+
+                                                                          
 out of <!-- l. 22 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>100</mn></mrow></math>.
 Therefore, we can <span class='cmti-12'>assign </span>a probability distribution to each student, telling us
 their <span class='cmti-12'>likelihood </span>to get some particular score (such as 72 or 49). Now, if we <span class='cmti-12'>assume</span>
@@ -103,15 +103,15 @@ them.
 <p><a id='x11-68000doc'></a></p>
 <!-- l. 30 --><p class='noindent'>There are some problems both with the catalog and traditional curve grading:
 </p>
-                                                                          
-
-                                                                          
       <ul class='itemize1'>
       <li class='itemize'><span class='cmbxti-10x-x-120'>They are ambiguous! </span>In the catalog grading, there is no objective
       way to choose where to put the brackets: we could go with the standard
       brackets (90-100, 85-59, 80-84, etc.), but they are not dictated by a fair
       objective mechanism. The approach of the curve grading is better, but
       it also suffers from the same problem; for instance, if a student is in the
+                                                                          
+
+                                                                          
       top <!-- l. 32 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>15</mn><mi>%</mi></mrow></math>
       of the class, should s/he get <span class='cmtt-12'>AA</span>, <span class='cmtt-12'>BA</span>, or <span class='cmtt-12'>BB</span>?
       </li>
@@ -141,9 +141,6 @@ them.
 groups: indeed, we expect students to obtain similar results if they turn in similar
 homeworks or make similar mistakes in the exams, so it is natural to observe
 clustering of students around some score points. If we identify such clusters and
-                                                                          
-
-                                                                          
 group them into 9 categories, we can assign letter grades in an unambiguous fair
 way!
 </p><!-- l. 39 --><p class='indent'>   There is a fast and reliable way to do just this: following Mathematica
@@ -151,6 +148,9 @@ command splits the “scores” list into 9 categories, based on the clustering 
 individual scores! </p>
 <div class='center'>
 <!-- l. 40 --><p class='noindent'>
+                                                                          
+
+                                                                          
 </p>
 <!-- l. 41 -->
 <div class='lstlisting' id='listing-2'><span class='label'><a id='x11-68001r1'></a></span><span style='color:#66998F'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>=</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#66998F'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>,9]</span></span></div>
