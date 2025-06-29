@@ -160,46 +160,55 @@ achieved by the following code: </p>
 <!-- l. 46 --><p class='noindent'>
 </p>
 <!-- l. 47 -->
-<div class='lstlisting' id='listing-3'><span class='label'><a id='x11-69002r1'></a></span><span style='color:#66998F'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>=</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>100</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>-</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#262680'><span class='cmtt-10'>Exp</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#262680'><span class='cmtt-10'>Log</span></span><span style='color:#000000'><span class='cmtt-10'>[100-</span></span><span style='color:#66998F'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>],9]]</span></span></div>
+<div class='lstlisting' id='listing-3'><span class='label'><a id='x11-69002r1'></a></span><span style='color:#66998F'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>=</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#66998F'><span class='cmtt-10'>X</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>-</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#262680'><span class='cmtt-10'>Exp</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#262680'><span class='cmtt-10'>Log</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>X</span></span><span style='color:#000000'><span class='cmtt-10'>-</span></span><span style='color:#66998F'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>],9]]</span></span></div>
 </div>
-<!-- l. 52 --><p class='indent'>   This ensures <span class='cmti-12'>an algorithmic unambiguous grading scheme which tries to assign
+<!-- l. 51 --><p class='noindent'>where <!-- l. 51 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi> <mo class='MathClass-rel'>≥</mo> <mn>100</mn></mrow></math> (with
+default value <!-- l. 51 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>100</mn></mrow></math>)
+is a tunable parameter ensuring the asymmetry, with
+<!-- l. 51 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi> <mo class='MathClass-rel'>→</mo><mi>∞</mi></mrow></math>
+restoring back the symmetry.
+</p><!-- l. 53 --><p class='indent'>   This ensures <span class='cmti-12'>an algorithmic unambiguous grading scheme which tries to assign
 </span><span class='cmti-12'>same letter grade to students with similar scores, and which distinguishes the
 </span><span class='cmti-12'>effort to get more points between low and high end of the score spectrum</span>. An
 actual example of how this approach led to letter grades can be seen in the
-following figure, which reflects the grades of my Phys209 class in 2023 Fall
-Semester. </p>
-<div class='center'>
-<!-- l. 53 --><p class='noindent'>
-</p><!-- l. 54 --><p class='noindent'><img alt='PIC' src='images//grade_visualization.png' style='width:100%' /> </p></div>
                                                                           
 
                                                                           
-<!-- l. 57 --><p class='indent'>   One problem with this approach is the effect of outlier students who receive
+following figure, which reflects the grades of my Phys209 class in 2023 Fall
+Semester. </p>
+<div class='center'>
+<!-- l. 54 --><p class='noindent'>
+</p><!-- l. 55 --><p class='noindent'><img alt='PIC' src='images//grade_visualization.png' style='width:100%' /> </p></div>
+<!-- l. 58 --><p class='indent'>   One problem with this approach is the effect of outlier students who receive
 rather high grades: the algorithm (by design) isolate them as the sole
 receipents of the letter grade <span class='cmtt-12'>AA</span>, rendering other successful (but not outlier)
 students receiving lower letter grades. For instance, the algorithm yields
 the following distribution for my Phys209 class in 2024 Fall semester:
 </p>
 <div class='center'>
-<!-- l. 58 --><p class='noindent'>
-</p><!-- l. 59 --><p class='noindent'><img alt='PIC' src='images//grade_visualization_2.png' style='width:100%' /> </p></div>
-<!-- l. 62 --><p class='indent'>   One solution is to create more clusters and reward a few of the top clusters the
-grade <span class='cmtt-12'>AA</span>. For example, for my Phys209 class in 2024 Fall semester, I created 10
-clusters and awarded the top two groups the letter grade <span class='cmtt-12'>AA</span>, leading the final
-distribution below. </p>
+<!-- l. 59 --><p class='noindent'>
+</p><!-- l. 60 --><p class='noindent'><img alt='PIC' src='images//grade_visualization_2.png' style='width:100%' /> </p></div>
+<!-- l. 63 --><p class='indent'>   We can tweak the the parameter <!-- l. 63 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>X</mi></math>
+mentioned above to present this; we can also create more clusters and reward a
+few of the top clusters the grade <span class='cmtt-12'>AA</span>. For example, for my Phys209 class in 2024
+Fall semester, I created 10 clusters and awarded the top two groups the letter
+grade <span class='cmtt-12'>AA</span>, leading the final distribution below. </p>
 <div class='center'>
-<!-- l. 63 --><p class='noindent'>
-</p><!-- l. 64 --><p class='noindent'><img alt='PIC' src='images//grade_visualization_3.png' style='width:100%' /> </p></div>
-<!-- l. 67 --><p class='indent'>   Another solution is to explicitly specify a method for <span class='cmtt-12'>FindClusters </span>command;
+<!-- l. 64 --><p class='noindent'>
+</p><!-- l. 65 --><p class='noindent'><img alt='PIC' src='images//grade_visualization_3.png' style='width:100%' /> </p></div>
+<!-- l. 68 --><p class='indent'>   Another solution is to explicitly specify a method for <span class='cmtt-12'>FindClusters </span>command;
 for instance, for my Phys210 class in 2024 Spring semester, I chose <span class='cmti-12'>KMeans</span>
 method to ensure sufficiently many students get higher grades as can be seen in
 the comparison below. </p>
 <div class='center'>
-<!-- l. 68 --><p class='noindent'>
-</p><!-- l. 69 --><p class='noindent'><img alt='PIC' src='images//grading_method_effect.png' style='width:100%' /> </p></div>
+<!-- l. 69 --><p class='noindent'>
+</p><!-- l. 70 --><p class='noindent'><img alt='PIC' src='images//grading_method_effect.png' style='width:100%' /> </p></div>
+<!-- l. 72 --><p class='noindent'>where I also took <!-- l. 72 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi> <mo class='MathClass-rel'>=</mo> <mn>110</mn></mrow></math>
+in this particular case.
                                                                           
 
                                                                           
+</p>
    <!-- l. 1 --><div class='crosslinks'><p class='noindent'>[<a href='MySchedule.html'>next</a>] [<a href='MyTeachingPolicy.html'>prev</a>] [<a href='MyTeachingPolicy.html#tailMyTeachingPolicy.html'>prev-tail</a>] [<a href='MyGradingScheme.html'>front</a>] [<a href='index.html#MyGradingScheme.html'>up</a>] </p></div>
 <!-- l. 1 --><p class='indent'>   <a id='tailMyGradingScheme.html'></a></p> 
 <div class='footer'><p>Copyright © by Soner Albayrak | All rights reserved</p></div> 
