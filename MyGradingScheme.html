@@ -18,9 +18,6 @@ assignment in an heuristic course-by-course manner. I instead do this
 assignment in an algorithmic way, which is detailed in this website for full
 transparency.
 </p>
-                                                                          
-
-                                                                          
    <h5 class='likesubsubsectionHead' id='overview-of-different-approaches'><a id='x12-82000'></a>Overview of different approaches</h5>
 <p><a id='x12-82000doc'></a></p>
 <!-- l. 6 --><p class='noindent'>Let us assume that a student <!-- l. 6 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
@@ -44,6 +41,9 @@ if it exists.
 </p>
 <!-- l. 10 --><p class='noindent'><span class='likeparagraphHead' id='a'><a id='x12-83000'></a>(a)</span>
    The first practical approach that we can choose is to assume the following:
+                                                                          
+
+                                                                          
 </p>
       <ul class='itemize1'>
       <li class='itemize'>The dependence on <!-- l. 12 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
@@ -56,9 +56,6 @@ on their scores, independent of the semester of the course. Therefore, we simply
 create score brackets (such as 90-100, 85-90, etc.), and assign letter grades based
 on which bracket a student’s score falls into. This is colloquially called <span class='cmti-12'>catalog
 </span><span class='cmti-12'>grading</span>.
-                                                                          
-
-                                                                          
 </p>
 <!-- l. 17 --><p class='noindent'><span class='likeparagraphHead' id='b'><a id='x12-84000'></a>(b)</span>
    The second practical approach assumes the following: </p>
@@ -78,6 +75,9 @@ that <span class='cmbx-12'>(1) </span>these probability distributions are suffic
 sufficiently many students in the class, the probability distribution for <span class='cmti-12'>a
 </span><span class='cmti-12'>hypothetical average student </span>becomes a <span class='cmti-12'>Gaussian distribution</span>. This follows from
 the <span class='cmti-12'>Central Limit Theorem</span>.
+                                                                          
+
+                                                                          
 </p><!-- l. 24 --><p class='indent'>   The letter grades of individual students are now assigned based on how well they
 did compared to this hypothetical average student. For instance, if a student has the
 score <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>40</mn></mrow></math>,
@@ -94,9 +94,6 @@ grading is colloquially called <span class='cmti-12'>curve grading</span>.
 in the other methods. For instance, one can extend the dependence on
 <!-- l. 26 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
 beyond the mere score of the student. This would entail including the
-                                                                          
-
-                                                                          
 observations of the student (such as class attendance) into the final letter grade.
 Despite having the potential to be somehow fairer, these methods are either
 non-algorithmic or non-practical for large classes, hence I do not prefer
@@ -117,6 +114,9 @@ them.
       </li>
       <li class='itemize'><span class='cmbxti-10x-x-120'>They are unfair in the letter transitions! </span>For instance, if we
       decide that a student gets <span class='cmtt-12'>AA </span>above some particular score <!-- l. 33 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>X</mi></math>,
+                                                                          
+
+                                                                          
       there may be 30 students in the class who get the the letter grade <span class='cmtt-12'>BA</span>
       because their score is <!-- l. 33 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi> <mo class='MathClass-bin'>−</mo> <mn>1</mn></mrow></math>,
       whereas 25 other students with the score <!-- l. 33 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi> <mo class='MathClass-bin'>+</mo> <mn>1</mn></mrow></math>
@@ -132,9 +132,6 @@ them.
       pair with the grades <!-- l. 34 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>92</mn></mrow></math>
       and <!-- l. 34 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>97</mn></mrow></math>
       can not be considered in the same way. The traditional curve grading
-                                                                          
-
-                                                                          
       fits  to  a  Gaussian  curve,  which  is  symmetric,  therefore  one  should
       induce this asymmetry externally. In the catalog grading, there is no
       mechanism  at  all  to  supply  such  an  asymmetry.  In  short,  in  both
@@ -155,6 +152,9 @@ individual scores! </p>
 <!-- l. 41 -->
 <div class='lstlisting' id='listing-2'><span class='label'><a id='x12-86001r1'></a></span><span style='color:#66998F'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>=</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#66998F'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>,9]</span></span></div>
 </div>
+                                                                          
+
+                                                                          
 <!-- l. 45 --><p class='noindent'>This, however, does not solve the third problem above as the clustering method does
 not distinguish different parts of the score spectrum. We can remedy this by
 stretching the high end of the scores and squeezing the low end –this can be
@@ -170,9 +170,6 @@ default value <!-- l. 51 --><math display='inline' xmlns='http://www.w3.org/1998
 is a tunable parameter ensuring the asymmetry, with
 <!-- l. 51 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi> <mo class='MathClass-rel'>→</mo><mi>∞</mi></mrow></math>
 restoring back the symmetry.
-                                                                          
-
-                                                                          
 </p><!-- l. 53 --><p class='indent'>   This ensures <span class='cmti-12'>an algorithmic unambiguous grading scheme which tries to assign
 </span><span class='cmti-12'>same letter grade to students with similar scores, and which distinguishes the
 </span><span class='cmti-12'>effort to get more points between low and high end of the score spectrum</span>. An
@@ -191,6 +188,9 @@ the following distribution for my Phys209 class in 2024 Fall semester:
 <div class='center'>
 <!-- l. 59 --><p class='noindent'>
 </p><!-- l. 60 --><p class='noindent'><img alt='PIC' src='images//grade_visualization_2.png' style='width:100%' /> </p></div>
+                                                                          
+
+                                                                          
 <!-- l. 63 --><p class='indent'>   We can tweak the the parameter <!-- l. 63 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>X</mi></math>
 mentioned above to present this; we can also create more clusters and reward a
 few of the top clusters the grade <span class='cmtt-12'>AA</span>. For example, for my Phys209 class in 2024
@@ -206,9 +206,6 @@ the comparison below. </p>
 <div class='center'>
 <!-- l. 69 --><p class='noindent'>
 </p><!-- l. 70 --><p class='noindent'><img alt='PIC' src='images//grading_method_effect.png' style='width:100%' /> </p></div>
-                                                                          
-
-                                                                          
 <!-- l. 72 --><p class='noindent'>where I also took <!-- l. 72 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi> <mo class='MathClass-rel'>=</mo> <mn>110</mn></mrow></math>
 in this particular case.
                                                                           
