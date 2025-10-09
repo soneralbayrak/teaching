@@ -9,8 +9,8 @@
  <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js' type='text/javascript'></script>  
 <link href='css/custom.css' rel='stylesheet' type='text/css' /></head> 
 <body><div class='header'><p><a href='https://soneralbayrak.com/'>S.Albayrak</a> <a href='https://soneralbayrak.com/teaching'>Home</a></p></div> 
-   <!-- l. 1 --><div class='crosslinks'><p class='noindent'>[<a href='MySchedule.html'>next</a>] [<a href='MyTeachingPolicy.html'>prev</a>] [<a href='MyTeachingPolicy.html#tailMyTeachingPolicy.html'>prev-tail</a>] [<a href='#tailMyGradingScheme.html'>tail</a>] [<a href='index.html#MyGradingScheme.html'>up</a>] </p></div>
-   <h3 class='likesectionHead' id='my-grading-scheme'><a id='x12-81000'></a>My Grading Scheme</h3>
+   <!-- l. 1 --><div class='crosslinks'><p class='noindent'>[<a href='MyTeachingPolicy.html'>prev</a>] [<a href='MyTeachingPolicy.html#tailMyTeachingPolicy.html'>prev-tail</a>] [<a href='#tailMyGradingScheme.html'>tail</a>] [<a href='index.html#MyGradingScheme.html'>up</a>] </p></div>
+   <h3 class='likesectionHead' id='my-grading-scheme'><a id='x12-82000'></a>My Grading Scheme</h3>
 <!-- l. 2 --><p class='noindent'>There is no universally-agreed-upon way to convert the overall score of a student
 to the final letter grade. Many institutions (including METU) leave this to
 the instructor’s full discretion, and many instructors choose to do this
@@ -18,8 +18,8 @@ assignment in an heuristic course-by-course manner. I instead do this
 assignment in an algorithmic way, which is detailed in this website for full
 transparency.
 </p>
-   <h5 class='likesubsubsectionHead' id='overview-of-different-approaches'><a id='x12-82000'></a>Overview of different approaches</h5>
-<p><a id='x12-82000doc'></a></p>
+   <h5 class='likesubsubsectionHead' id='overview-of-different-approaches'><a id='x12-83000'></a>Overview of different approaches</h5>
+<p><a id='x12-83000doc'></a></p>
 <!-- l. 6 --><p class='noindent'>Let us assume that a student <!-- l. 6 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
 takes a class <!-- l. 6 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>C</mi></math>: at the end of
 the semester, the grade <!-- l. 6 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>G</mi></math>
@@ -38,13 +38,13 @@ many conditions (how good the instructor is, how hard the tests are,
 whether it is a morning class, etc.). It is impossible to find the “correct”
 <!-- l. 8 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>f</mi></math>, even
 if it exists.
+</p>
+<!-- l. 10 --><p class='noindent'><span class='likeparagraphHead' id='a'><a id='x12-84000'></a>(a)</span>
+   The first practical approach that we can choose is to assume the following:
+</p>
                                                                           
 
                                                                           
-</p>
-<!-- l. 10 --><p class='noindent'><span class='likeparagraphHead' id='a'><a id='x12-83000'></a>(a)</span>
-   The first practical approach that we can choose is to assume the following:
-</p>
       <ul class='itemize1'>
       <li class='itemize'>The dependence on <!-- l. 12 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
       can be reduced to a single parameter: <span class='cmti-12'>the score of the student</span>.
@@ -57,7 +57,7 @@ create score brackets (such as 90-100, 85-90, etc.), and assign letter grades ba
 on which bracket a student’s score falls into. This is colloquially called <span class='cmti-12'>catalog
 </span><span class='cmti-12'>grading</span>.
 </p>
-<!-- l. 17 --><p class='noindent'><span class='likeparagraphHead' id='b'><a id='x12-84000'></a>(b)</span>
+<!-- l. 17 --><p class='noindent'><span class='likeparagraphHead' id='b'><a id='x12-85000'></a>(b)</span>
    The second practical approach assumes the following: </p>
       <ul class='itemize1'>
       <li class='itemize'>The dependence on <!-- l. 19 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
@@ -72,14 +72,14 @@ out of <!-- l. 22 --><math display='inline' xmlns='http://www.w3.org/1998/Math/M
 Therefore, we can <span class='cmti-12'>assign </span>a probability distribution to each student, telling us
 their <span class='cmti-12'>likelihood </span>to get some particular score (such as 72 or 49). Now, if we <span class='cmti-12'>assume</span>
 that <span class='cmbx-12'>(1) </span>these probability distributions are sufficiently similar and <span class='cmbx-12'>(2) </span>there are
-                                                                          
-
-                                                                          
 sufficiently many students in the class, the probability distribution for <span class='cmti-12'>a
 </span><span class='cmti-12'>hypothetical average student </span>becomes a <span class='cmti-12'>Gaussian distribution</span>. This follows from
 the <span class='cmti-12'>Central Limit Theorem</span>.
 </p><!-- l. 24 --><p class='indent'>   The letter grades of individual students are now assigned based on how well they
 did compared to this hypothetical average student. For instance, if a student has the
+                                                                          
+
+                                                                          
 score <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>40</mn></mrow></math>,
 and the probability for the hypothetical average student to get a score between
 <!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>30</mn></mrow></math> and
@@ -89,7 +89,7 @@ the student is to be awarded the letter grade <span class='cmtt-12'>AA </span>ev
 <span class='cmtt-12'>FF </span>under the “catalog grading”. This “comparing with the gaussian” type of
 grading is colloquially called <span class='cmti-12'>curve grading</span>.
 </p>
-<!-- l. 26 --><p class='noindent'><span class='likeparagraphHead' id='c'><a id='x12-85000'></a>(c)</span>
+<!-- l. 26 --><p class='noindent'><span class='likeparagraphHead' id='c'><a id='x12-86000'></a>(c)</span>
    There are several other approaches, which relax some of the assumptions
 in the other methods. For instance, one can extend the dependence on
 <!-- l. 26 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>
@@ -99,8 +99,8 @@ Despite having the potential to be somehow fairer, these methods are either
 non-algorithmic or non-practical for large classes, hence I do not prefer
 them.
 </p>
-   <h5 class='likesubsubsectionHead' id='my-algorithm'><a id='x12-86000'></a>My algorithm</h5>
-<p><a id='x12-86000doc'></a></p>
+   <h5 class='likesubsubsectionHead' id='my-algorithm'><a id='x12-87000'></a>My algorithm</h5>
+<p><a id='x12-87000doc'></a></p>
 <!-- l. 30 --><p class='noindent'>There are some problems both with the catalog and traditional curve grading:
 </p>
       <ul class='itemize1'>
@@ -112,13 +112,13 @@ them.
       top <!-- l. 32 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>15</mn><mi>%</mi></mrow></math>
       of the class, should s/he get <span class='cmtt-12'>AA</span>, <span class='cmtt-12'>BA</span>, or <span class='cmtt-12'>BB</span>?
       </li>
-                                                                          
-
-                                                                          
       <li class='itemize'><span class='cmbxti-10x-x-120'>They are unfair in the letter transitions! </span>For instance, if we
       decide that a student gets <span class='cmtt-12'>AA </span>above some particular score <!-- l. 33 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>X</mi></math>,
       there may be 30 students in the class who get the the letter grade <span class='cmtt-12'>BA</span>
       because their score is <!-- l. 33 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi> <mo class='MathClass-bin'>−</mo> <mn>1</mn></mrow></math>,
+                                                                          
+
+                                                                          
       whereas 25 other students with the score <!-- l. 33 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi> <mo class='MathClass-bin'>+</mo> <mn>1</mn></mrow></math>
       get the letter grade <span class='cmtt-12'>AA</span>: both catalog and traditional curve grading are
       insensitive to such problems!
@@ -150,20 +150,20 @@ individual scores! </p>
 <!-- l. 40 --><p class='noindent'>
 </p>
 <!-- l. 41 -->
-                                                                          
-
-                                                                          
-<div class='lstlisting' id='listing-2'><span class='label'><a id='x12-86001r1'></a></span><span style='color:#66998F'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>=</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#66998F'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>,9]</span></span></div>
+<div class='lstlisting' id='listing-2'><span class='label'><a id='x12-87001r1'></a></span><span style='color:#66998F'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>=</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#66998F'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>,9]</span></span></div>
 </div>
 <!-- l. 45 --><p class='noindent'>This, however, does not solve the third problem above as the clustering method does
 not distinguish different parts of the score spectrum. We can remedy this by
+                                                                          
+
+                                                                          
 stretching the high end of the scores and squeezing the low end –this can be
 achieved by the following code: </p>
 <div class='center'>
 <!-- l. 46 --><p class='noindent'>
 </p>
 <!-- l. 47 -->
-<div class='lstlisting' id='listing-3'><span class='label'><a id='x12-86002r1'></a></span><span style='color:#66998F'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>=</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#66998F'><span class='cmtt-10'>X</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>-</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#262680'><span class='cmtt-10'>Exp</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#262680'><span class='cmtt-10'>Log</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>X</span></span><span style='color:#000000'><span class='cmtt-10'>-</span></span><span style='color:#66998F'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>],9]]</span></span></div>
+<div class='lstlisting' id='listing-3'><span class='label'><a id='x12-87002r1'></a></span><span style='color:#66998F'><span class='cmtt-10'>scoresClustered</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>=</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#66998F'><span class='cmtt-10'>X</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#000000'><span class='cmtt-10'>-</span></span><span style='color:#000000'><span class='cmtt-10'> </span></span><span style='color:#262680'><span class='cmtt-10'>Exp</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>FindClusters</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#262680'><span class='cmtt-10'>Log</span></span><span style='color:#000000'><span class='cmtt-10'>[</span></span><span style='color:#66998F'><span class='cmtt-10'>X</span></span><span style='color:#000000'><span class='cmtt-10'>-</span></span><span style='color:#66998F'><span class='cmtt-10'>scores</span></span><span style='color:#000000'><span class='cmtt-10'>],9]]</span></span></div>
 </div>
 <!-- l. 51 --><p class='noindent'>where <!-- l. 51 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi> <mo class='MathClass-rel'>≥</mo> <mn>100</mn></mrow></math> (with
 default value <!-- l. 51 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>100</mn></mrow></math>)
@@ -185,12 +185,12 @@ receipents of the letter grade <span class='cmtt-12'>AA</span>, rendering other 
 students receiving lower letter grades. For instance, the algorithm yields
 the following distribution for my Phys209 class in 2024 Fall semester:
 </p>
-                                                                          
-
-                                                                          
 <div class='center'>
 <!-- l. 59 --><p class='noindent'>
 </p><!-- l. 60 --><p class='noindent'><img alt='PIC' src='images//grade_visualization_2.png' style='width:100%' /> </p></div>
+                                                                          
+
+                                                                          
 <!-- l. 63 --><p class='indent'>   We can tweak the the parameter <!-- l. 63 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>X</mi></math>
 mentioned above to present this; we can also create more clusters and reward a
 few of the top clusters the grade <span class='cmtt-12'>AA</span>. For example, for my Phys209 class in 2024
@@ -212,8 +212,8 @@ in this particular case.
 
                                                                           
 </p>
-   <!-- l. 1 --><div class='crosslinks'><p class='noindent'>[<a href='MySchedule.html'>next</a>] [<a href='MyTeachingPolicy.html'>prev</a>] [<a href='MyTeachingPolicy.html#tailMyTeachingPolicy.html'>prev-tail</a>] [<a href='MyGradingScheme.html'>front</a>] [<a href='index.html#MyGradingScheme.html'>up</a>] </p></div>
-<!-- l. 1 --><p class='indent'>   <a id='tailMyGradingScheme.html'></a></p> 
+   <!-- l. 75 --><div class='crosslinks'><p class='noindent'>[<a href='MyTeachingPolicy.html'>prev</a>] [<a href='MyTeachingPolicy.html#tailMyTeachingPolicy.html'>prev-tail</a>] [<a href='MyGradingScheme.html'>front</a>] [<a href='index.html#MyGradingScheme.html'>up</a>] </p></div>
+<!-- l. 75 --><p class='indent'>   <a id='tailMyGradingScheme.html'></a></p> 
 <div class='footer'><p>Copyright © by Soner Albayrak | All rights reserved</p></div> 
  
 </body>  
