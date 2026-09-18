@@ -4,6 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
+<script>
+/* Theme: apply a saved choice before the first paint so the page never
+   flashes the wrong colours. Without a saved choice, or without JavaScript,
+   the page follows the system setting. The toggle itself is in js/main.js. */
+(function () {
+  try {
+    var t = localStorage.getItem("theme");
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  } catch (e) {}
+})();
+</script>
 <title>Teaching — Soner Albayrak</title>
 <meta name="description" content="Courses taught by Soner Albayrak at the Department of Physics, Middle East Technical University: syllabi, past examinations, grade statistics, and teaching policies.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
